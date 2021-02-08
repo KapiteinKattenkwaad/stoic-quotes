@@ -1,6 +1,10 @@
 <template>
   <div class="quotes">
     <RandomQuote />
+    <pre>
+      made by
+      <a href="https://www.maxstouten.com" target="_blank">Max</a>
+    </pre>
   </div>
 </template>
 
@@ -24,6 +28,7 @@ html {
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  position: relative;
   &::before {
     content: '';
     position: absolute;
@@ -37,4 +42,14 @@ html {
     filter: invert(0.2) opacity(0.3);
   }
 }
+pre {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  a {
+    color: #484848;
+  }
+}
+
 </style>

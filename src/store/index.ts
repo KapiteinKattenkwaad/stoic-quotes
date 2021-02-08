@@ -37,7 +37,6 @@ const { store } = createDirectStore({
         url: 'src/assets/quotes.json'
       }).then(response => {
         commit('SET_QUOTES', response.data)
-        console.log('quotes', response.data)
       })
     }
   }

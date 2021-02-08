@@ -89,11 +89,13 @@ button {
 
 .quote {
   max-width: 400px;
-  min-width: 300px;
   min-height: 200px;
   padding: 2rem 3rem;
   margin: 1rem 1rem 5rem 1rem;
   position: relative;
+  @media (min-width: 992px) {
+    min-width: 400px;
+  }
   &__quote {
     font-size: 1.2rem;
     line-height: 32px;
