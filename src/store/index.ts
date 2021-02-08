@@ -34,7 +34,7 @@ const { store } = createDirectStore({
     fetchMovies({ commit }) {
       axios({
         method: 'get',
-        url: './../assets/quotes.json'
+        url: './../quotes.json'
       }).then(response => {
         commit('SET_QUOTES', response.data)
       })
